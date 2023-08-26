@@ -1,0 +1,150 @@
+.{
+    margin: 0;
+    padding: 0;
+}
+.navbar ul{
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 35rem;
+}
+.navbar ul li{
+    display: inline;
+}
+. navbar ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 35px;
+    color:white ;
+    font-family: cursive;
+}
+.navbar ul li a:hover{
+    background-color:white ;
+    border: radius 25px; ;
+    color: black;
+    padding: 10px; ;
+}
+.first{
+    background-color: black;
+}
+.head .text1{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-top: 10rem;
+    padding-left: 15rem;
+    line-height: 5rem;
+    padding-bottom: 4rem;
+}
+.head .image1{
+    float: right;
+    padding-top: 75px;
+    padding-right: 10rem;
+}
+#login h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+#login form{
+    padding-top: 5rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+#login .text2{
+    background-image:url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    font-size: 25px;
+}
+#login .text2 .btn1 button{
+    font-size: 20px;
+    border-radius: 20px;
+    background-color:black ;
+    color: white;
+    padding: 10px;
+}
+#login .text2 .btn1 button:hover{
+    background-color: white;
+    color: black;
+}
+#login .text2 .btn1{
+    padding: 10px;
+}
+#login input{
+    border-radius: 5px;
+    height: 20px;
+}
+.third{
+    height: 70vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5rem;
+}
+.third .image3 img{
+    width: 580px;
+    min-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+.third .text3{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    font-size: larger;
+}
+.third{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.third .text3 .btn2 button{
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.third .text3 .btn2 button:hover{
+    background-color: white;
+    color: black;
+}
+.third .text3 .btn2{
+    padding: 10px;
+}
+
+#contact h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+#contect .text4 from{
+    padding-top: 5rem;
+    font-size: 25px;
+    line-height: 40px;
+}
+.text4{
+    box-shadow: 0px 0px 15px gray;
+}
+
+
+
