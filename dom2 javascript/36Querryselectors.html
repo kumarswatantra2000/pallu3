@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selectors</title>
+    <!--
+
+    <style>
+#animate{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+}
+#animate:hover{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+    </style>
+    -->
+</head>
+<body>
+    <p 
+       onclick="this.innerHTML='changed'">change the text</p>
+       enter any text: <input type="text" id="from"onchange="uppercase()">
+    <!--
+    <p id="first">let's change the style
+        let's change the style
+        let's change the style
+    </p> -->
+<!--
+    <script>
+        document.getElementById("first").style.fontSize="30px";
+        document.getElementById("first").style.color="red";
+        document.getElementById("first").style.fontFamily="cursive";
+
+    </script>
+-->
+<!--
+<button type="button" onclick="document.getElementById('first').style.color='red'">change color</button> -->
+<!--
+<input type="button" value="Hide text" onclik="document.getElementById('first').style.visibility='hidden'">
+<input type="button" value="show text" onclik="document.getElementById('first').style.visibility='visible'">-->
+<!--
+<div id="animate"></div>
+<script>
+   // function move({
+        const element=document.getElementById("animate")
+    })
+</script>
+-->
+<script>
+    function uppercase(){
+        const element=document.getElementById("from");
+        element.value=element.value.toUpperCase();
+    }
+</script>
+</body>
+</html>

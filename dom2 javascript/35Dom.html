@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <p id="first">By ID</p>
+    <p>we are learning Dom</p>
+    <p id="sec">Decument object Model</p>
+
+    <script>
+        const element = document.getElementByTagName("first");
+        document.getElementById("sec").innerHTML="element by tag only (0) " + element(0).inner.HTML;
+
+    </script>
+</body>
+</html>

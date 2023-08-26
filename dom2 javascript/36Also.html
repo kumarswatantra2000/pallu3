@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listeners</title>
+</head>
+<style>
+    #out{
+        background-color: aqua;
+        padding: 50px;
+    }
+    #in{
+        background-color: white;
+        border: 2px solid white;
+        padding: 20px;
+        width: 200px;
+    }
+</style>
+<body>
+    <!--
+    <button id="button">click</button>
+    <p id="first"></p>
+    <script>
+        var element=document.getElementById("button");
+        element.addEventListener("mouseover",fun1);
+        element.addEventListener("click",fun2);
+        element.addEventListener("mouseout",fun3);
+
+        function fun1(){
+            document.getElementById("first").innerHTML +=" mouse over ";
+        }
+        function fun2(){
+            document.getElementById("first").innerHTML +=" clicked ";
+        }
+        function fun3(){
+            document.getElementById("first").innerHTML +=" mouse out ";
+        }
+        
+    </script>
+-->
+
+<div id="out">
+    <h2>outside</h2>
+    <h4 id="in">Inside</h4>
+</div>
+
+<script>
+    document.getElementById("in").addEventListener("click",function(){
+        alert("you clicked inside the box");
+    });
+    document.getElementById("out").addEventListener("click",function(){
+        alert("you clicked outside of the box");
+    });
+</script>
+    
+</body>
+</html>
