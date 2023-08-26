@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Classes</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .class-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .class-card h2 {
+      margin-top: 0;
+    }
+    .class-card p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Classes</h1>
+  </header>
+  <div class="container">
+    <div class="class-card">
+      <h2>java</h2>
+      <p>Learn the fundamentals of java.</p>
+      <button onclick="enroll('java')">Enroll</button>
+    </div>
+    <div class="class-card">
+      <h2>python</h2>
+      <p>Explore the world of python.</p>
+      <button onclick="enroll('python')">Enroll</button>
+    </div>
+    <div class="class-card">
+      <h2>c++</h2>
+      <p>Discover the past through c++ lessons.</p>
+      <button onclick="enroll('c++')">Enroll</button>
+    </div>
+  </div>
+  <script>
+    // JavaScript logic
+    function enroll(course) {
+      alert('You have enrolled in the ' + course + ' class.');
+      // Additional logic to handle enrollment
+    }
+  </script>
+</body>
+</html>
