@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter App</title>
+  <style>
+    /* CSS styles */
+    body {
+        border: 50rem;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .counter {
+      font-size: 30px;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    button {
+
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Counter App</h1>
+  <div class="counter">0</div>
+  <button onclick="decrement(0)">Decrement by 1</button>
+  <button onclick="increment()">Increment by 1</button>
+  <button onclick="Reset Value()">Reset Value</button>
+
+  <script>
+    // JavaScript code
+    var counterElement = document.querySelector('.counter');
+    var count = 0;
+
+    function increment() {
+      count++;
+      counterElement.textContent = count;
+    }
+
+    function decrement() {
+      if (count > 0) {
+        count--;
+        counterElement.textContent = count;
+      }
+    }
+  </script>
+</body>
+</html>
