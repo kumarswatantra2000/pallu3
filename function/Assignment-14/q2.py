@@ -3,8 +3,7 @@
 
 def pallu():
     li=[]
-    for x in range(1,31):
-       
+    for x in range(1,31): 
        y=x**2
        li.append(y)
     print(li)
