@@ -1,0 +1,30 @@
+// Date
+
+let myDate = new Date()
+//console.log(myDate.toString());
+//console.log(myDate.setFullYear());
+//console.log(myDate.setMonth());
+//console.log(myDate.getDay());
+//console.log(myDate.toDateString());
+//console.log(myDate.toLocaleString());
+//console.log(typeof myDate());
+
+//let myCreatedDate = new Date(2023, 0, 23)
+//let myCreatedDate = new Date(2023, 0, 23, 5, 7)
+//let myCreatedDate = new Date("2023-01-14")
+let myCreatedDate = new Date("01-23-2023")
+//console.log(myCreatedDate.toLocaleString());
+
+//let myTimeStem = Date.now()
+
+//console.log(myTimeStem);
+//console.log(myCreatedDate.getTime());
+
+//console.log(math.floor(Date.now()/1000));
+
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getDay());
+
+// '${newDate.getDay()} and the time
