@@ -1,0 +1,112 @@
+# BMI METHOD 1
+#IBM Calculate
+def calculate_bmi(weight, height):
+    bmi = weight / (height ** 2)
+    return bmi
+
+
+def interpret_bmi(bmi):
+    if bmi < 18.5:
+        return "Underweight"
+    elif 18.5 <= bmi < 24.9: 
+        return "Normal weight"
+    elif 25 <= bmi < 29.9:
+        return "Overweight"
+    else:
+        return "Obese"
+
+def main():
+    print("BMI Calculator")
+    weight = float(input("Enter your weight in kilograms: "))
+    height = float(input("Enter your height in meters: "))
+    
+    bmi = calculate_bmi(weight, height)
+    interpretation = interpret_bmi(bmi)
+    
+    print(f"Your BMI is {bmi:.2f}")
+    print(f"You are {interpretation}")
+    
+if __name__ == "__main__":
+    main()
+output
+PS C:\Users\hp\Desktop\python> & C:/Users/hp/AppData/Local/Programs/Python/Python311/python.exe c:/Users/hp/Desktop/python/1.py
+BMI Calculator
+Enter your weight in kilograms: 44
+Enter your height in meters: 162
+Your BMI is 0.00
+You are Underweight
+PS C:\Users\hp\Desktop\python> 
+
+
+# Email slicer
+emailid=str(input("Enter a valid emailid \t"))
+li=emailid.split("@")
+print("username " + li[0])
+print("domain" + li[1])
+output
+PS C:\Users\hp\Desktop\python> python -u "c:\Users\hp\Desktop\python\2.py"
+Enter a valid emailid   kumarswatantra0220@gmail.com
+username kumarswatantra0220
+domaingmail.com
+PS C:\Users\hp\Desktop\python>  
+
+#stone papers rock
+import random
+
+def get_user_choice():
+    choice = input("Choose Rock, Paper, or Scissors: ")
+    return choice.lower()
+
+def get_computer_choice():
+    choices = ['rock', 'paper', 'scissors']
+    return random.choice(choices)
+
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return "It's a tie!"
+    elif user_choice == 'rock':
+        return "You win!" if computer_choice == 'scissors' else "Computer wins!"
+    elif user_choice == 'paper':
+        return "You win!" if computer_choice == 'rock' else "Computer wins!"
+    elif user_choice == 'scissors':
+        return "You win!" if computer_choice == 'paper' else "Computer wins!"
+    else:
+        return "Invalid input. Please choose Rock, Paper, or Scissors."
+
+def play_game():
+    user_choice = get_user_choice()
+    computer_choice = get_computer_choice()
+    print(f"You chose {user_choice.capitalize()}.")
+    print(f"The computer chose {computer_choice.capitalize()}.")
+    result = determine_winner(user_choice, computer_choice)
+    print(result)
+
+play_game()
+
+output
+PS C:\Users\hp\Desktop\python> & C:/Users/hp/AppData/Local/Programs/Python/Python311/python.exe c:/Users/hp/Desktop/python/game.py
+Choose Rock, Paper, or Scissors: paper
+You chose Paper.
+The computer chose Scissors.
+Computer wins!
+PS C:\Users\hp\Desktop\python> 
+
+#roman to decimal number
+#convert to roman to deci,mal number
+def romanToDecimal(s):
+
+    roman = {'i':1,'v':5,'x':10,'l':50,'c':100,'d':500,'m':1000}
+    res = 0
+    for i in range(len(s)) :
+        if i+1 < len(s) and roman[s[i]] < roman[s[i+1]] :
+            res -= roman[s[i]]
+        else :
+
+            res += roman[s[i]]
+        return res
+print(romanToDecimal("mi"))
+output
+
+PS C:\Users\hp\Desktop\python> & C:/Users/hp/AppData/Local/Programs/Python/Python311/python.exe c:/Users/hp/Desktop/python/asw.py
+1000
+PS C:\Users\hp\Desktop\python>  
